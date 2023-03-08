@@ -1,17 +1,14 @@
-type joke = {
-	id: number;
-	jokeDetail: string;
-};
+import Joke from "../joke";
 
 interface ChuckJokeProps {
-    array: Array<joke>;
+    joke: Joke[];
 }
 
-const ChuckJoke: React.FC<ChuckJokeProps> = (props) => {
+const ChuckJoke: React.FC<ChuckJokeProps> = ({joke}) => {
+    const listItems = joke.map((d) => <li key={d.id}>{d.joke}</li>);
     return (
         <>
-                    <p>props.joke</p>
-                
+            <p>{listItems}</p>        
         </>
     )
 }
