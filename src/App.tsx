@@ -37,6 +37,7 @@ function App() {
 			<ChuckInfo whale = {whalesSaved} house = {roundHouseKicks} />
 
 			<h2>Jokes: </h2>
+			<h3>Filtered Jokes: </h3>
 			<ChuckJoke joke = {jokes} />
 		</div>
 	);
