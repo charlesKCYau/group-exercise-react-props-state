@@ -30,10 +30,10 @@ function App() {
 		<div className="App">
 
 			<h1>React props and state</h1>
-			<ChuckCard />
+			<ChuckCard greeting = {chuckGreeting}/>
 
 			<h2>Chuck Info: </h2>
-			<ChuckInfo />
+			<ChuckInfo whale = {whalesSaved} house = {roundHouseKicks} />
 
 			<h2>Jokes: </h2>
 
