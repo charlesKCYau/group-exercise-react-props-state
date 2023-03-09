@@ -27,6 +27,8 @@ function App() {
 		"joke": "Chuck Norris does not own a stove, oven, or microwave, because revenge is a dish best served cold.",
 	}])
 
+    const filteredJokes = jokes.filter(d => d.id === 3);
+
 	return (
 		<div className="App">
 
@@ -37,8 +39,9 @@ function App() {
 			<ChuckInfo whale = {whalesSaved} house = {roundHouseKicks} />
 
 			<h2>Jokes: </h2>
-			<h3>Filtered Jokes: </h3>
 			<ChuckJoke joke = {jokes} />
+			<h3>Filtered Jokes: </h3>
+			<ChuckJoke joke = {filteredJokes} />
 		</div>
 	);
 }
